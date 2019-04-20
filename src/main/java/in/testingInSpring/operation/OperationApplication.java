@@ -12,11 +12,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class OperationApplication extends SpringBootServletInitializer{
 	
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder) {
-		return applicationBuilder.sources(SpringBootWebSecurityConfiguration.class);
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(OperationApplication.class, args);
 	}
